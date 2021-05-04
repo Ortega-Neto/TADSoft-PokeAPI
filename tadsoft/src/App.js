@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import{ getAllPokemons } from './services/pokemon';
+import{ getAllPokemons, getPokemon } from './services/pokemon';
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,11 +18,29 @@ function App() {
 
       setNextUrl(response.next);
       setPrevUrl(response.previous);
+
+      let pokenon = await loadingPokemon(response.results);
+      console.log(pokenon);
+
       setLoading(false);
     }
 
     fetchData();
-  }, [])
+  }, []);
+
+  const loadingPokemon = async (data) => {
+    let _pokemonData = await Promise.all(
+      data.map(async pokemon =>{
+        let responsePokemonData = await getPokemon(pokemon.url);
+
+        return responsePokemonData;
+      })
+    );
+
+    setPokemonData(_pokemonData);
+  };
+
+  console.log(pokemonData);
 
   return (
     <div >
