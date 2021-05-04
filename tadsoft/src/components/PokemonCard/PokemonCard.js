@@ -2,7 +2,7 @@ import React from 'react';
 import typeColors from '../../helpers/typeColors'
 import './style.css';
 
-function Card({ pokemon }) {
+function PokemonCard({ pokemon }) {
     return (
         <div className="Card">
             <div className="Card_img">
@@ -15,7 +15,7 @@ function Card({ pokemon }) {
                 {
                     pokemon.types.map(type => {
                         return (
-                            <div className="Card__type" style={{ backgroundColor: typeColors[type.type.name] }}>
+                            <div className="Card_type" style={{ backgroundColor: typeColors[type.type.name] }}>
                                 {type.type.name}
                             </div>
                         )
@@ -23,15 +23,15 @@ function Card({ pokemon }) {
                 }
             </div>
             <div className="Card_info">
-                <div className="Card__data Card__data--weight">
+                <div className="Card_data Card_data--weight">
                     <p className="title">Weight</p>
                     <p>{pokemon.weight}</p>
                 </div>
-                <div className="Card_data Card__data--weight">
+                <div className="Card_data Card_data--weight">
                     <p className="title">Height</p>
                     <p>{pokemon.height}</p>
                 </div>
-                <div className="Card_data Card__data--ability">
+                <div className="Card_data Card_data--ability">
                     <p className="title">Ability</p>
                     <p>{pokemon.abilities[0].ability.name}</p>
                 </div>
@@ -40,4 +40,4 @@ function Card({ pokemon }) {
     );
 }
 
-export default Card;
+export default PokemonCard;
