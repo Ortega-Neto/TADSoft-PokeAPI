@@ -32,8 +32,28 @@ function PokemonCard({ pokemon }) {
                     <p>{pokemon.height}</p>
                 </div>
                 <div className="Card_data Card_data--ability">
-                    <p className="title">Ability</p>
-                    <p>{pokemon.abilities[0].ability.name}</p>
+                    <p className="title">HP</p>
+                    <p>{pokemon.stats[0].base_stat}</p>
+                </div>
+                <div className="Card_data Card_data--ability">
+                    <p className="title">Ataque</p>
+                    <p>{pokemon.stats[1].base_stat}</p>
+                </div>
+                <div className="Card_data Card_data--ability">
+                    <p className="title">Defesa</p>
+                    <p>{pokemon.stats[2].base_stat}</p>
+                </div>
+                <div className="Card_data Card_data--ability">
+                    <p className="title">Ataque Especial</p>
+                    <p>{pokemon.stats[3].base_stat}</p>
+                </div>
+                <div className="Card_data Card_data--ability">
+                    <p className="title">Defesa Especial</p>
+                    <p>{pokemon.stats[4].base_stat}</p>
+                </div>
+                <div className="Card_data Card_data--ability">
+                    <p className="title">Velocidade</p>
+                    <p>{pokemon.stats[5].base_stat}</p>
                 </div>
             </div>
         </div>
