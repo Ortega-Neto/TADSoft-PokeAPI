@@ -4,7 +4,7 @@ import PokemonCard from './components/PokemonCard';
 import { getPokemon, getAllPokemons } from './services/pokemon';
 import './App.css';
 
-function App() {
+export default function App() {
   const [pokemonData, setPokemonData] = useState([]);
   const [nextUrl, setNextUrl] = useState('');
   const [prevUrl, setPrevUrl] = useState('');
@@ -64,8 +64,8 @@ function App() {
         {loading ? <h1 style={{ textAlign: 'center' }}>Buscando Pokemons...</h1> : (
           <>
             <div className="btn">
-              <button onClick={prev}>Prev</button>
-              <button onClick={next}>Next</button>
+              <button onClick={prev}>Anterior</button>
+              <button onClick={next}>Próxima</button>
             </div>
             <div className="grid-container">
               {pokemonData.map((pokemon, i) => {
@@ -73,8 +73,8 @@ function App() {
               })}
             </div>
             <div className="btn">
-              <button onClick={prev}>Prev</button>
-              <button onClick={next}>Next</button>
+              <button onClick={prev}>Anterior</button>
+              <button onClick={next}>Próxima</button>
             </div>
           </>
         )}
@@ -82,5 +82,3 @@ function App() {
     </>
   );
 }
-
-export default App;

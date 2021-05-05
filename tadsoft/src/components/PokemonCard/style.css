@@ -8,7 +8,7 @@ p {
 
 .Card_types {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .Card_type {
@@ -20,7 +20,6 @@ p {
     background: cyan;
     color: #fff;
     font-size: 20px;
-    background-color: #808080;
 }
 
 .Card_name {
