@@ -1,10 +1,12 @@
 # TADSoft-PokeAPI
 
-Project Setup
-
+## Project Setup
+```
 npm install
-
 npm install @material-ui/core
+```
 
-Execute
+## Execute
+```
 npm start
+```
