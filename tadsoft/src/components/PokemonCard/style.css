@@ -2,13 +2,6 @@ p {
     margin: 0;
 }
 
-.Card {
-    background: white;
-    border-radius: 10px;
-    margin: 15px;
-    border-style: ridge;
-}
-
 .Card_img {
     text-align: center;
 }
@@ -22,24 +15,26 @@ p {
     padding: 5px 10px;
     margin: 10px 10px 10px 0;
     border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
     background: cyan;
     color: #fff;
+    font-size: 20px;
+    background-color: #808080;
 }
 
 .Card_name {
     text-align: center;
     text-transform: capitalize;
-    font-weight: 800;
-}
-
-.Card_info {
-    margin-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .Card_data {
-    padding-bottom: 10px;
+    font-size: 16px;
+    padding-bottom: 1px;
 }
 
 .Card_data .title {
-    font-weight: 700;
+    font-weight: bold;
 }

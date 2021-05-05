@@ -61,7 +61,7 @@ function App() {
     <>
       <Navbar />
       <div>
-        {loading ? <h1 style={{ textAlign: 'center' }}>Loading...</h1> : (
+        {loading ? <h1 style={{ textAlign: 'center' }}>Buscando Pokemons...</h1> : (
           <>
             <div className="btn">
               <button onClick={prev}>Prev</button>
