@@ -1,12 +1,25 @@
 p {
     margin: 0;
+    background: rgb(75, 74, 74);
+    text-align: center;
+}
+p:hover{
+    background-size: 100% 100%;
+    
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
 }
 
 .Card {
-    background: white;
+    background: rgb(75, 74, 74);
     border-radius: 10px;
     margin: 15px;
     border-style: ridge;
+    text-align: center;
+    border-color: #ef816c;
 }
 
 .Card_img {

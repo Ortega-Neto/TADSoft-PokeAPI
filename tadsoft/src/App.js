@@ -9,6 +9,7 @@ function App() {
   const [nextUrl, setNextUrl] = useState('');
   const [prevUrl, setPrevUrl] = useState('');
   const [loading, setLoading] = useState(true);
+  const [busca, setBusca] = useState('');
   const inicialUrl = 'https://pokeapi.co/api/v2/pokemon'
 
   useEffect(() => {
@@ -46,7 +47,8 @@ function App() {
   }
 
   const loadPokemon = async (data) => {
-    let _pokemonData = await Promise.all(
+    console.log(data)
+;    let _pokemonData = await Promise.all(
       data.map(async pokemon =>{
         let responsePokemonData = await getPokemon(pokemon.url);
 
@@ -56,25 +58,50 @@ function App() {
 
     setPokemonData(_pokemonData);
   };
+  
+  async function searchByName(){
+    
+      setLoading(true);
+      setBusca(document.getElementById('buscaPoke').value);
+      let response = await getAllPokemons(inicialUrl+'/'+busca);
+      
+
+      let pokeS = await loadPokemon(response.results);
+      console.log(pokeS);
+
+      setLoading(false);
+    }
+  
+    
 
   return (
     <>
       <Navbar />
       <div>
-        {loading ? <h1 style={{ textAlign: 'center' }}>Loading...</h1> : (
+        {loading ? <h1 style={{ textAlign: 'center' }}>Carregando...</h1> : (
           <>
             <div className="btn">
-              <button onClick={prev}>Prev</button>
-              <button onClick={next}>Next</button>
+            <input type="text" placeholder="Buscar.." 
+              name="buscar" id="buscaPoke" onChange={event => setBusca(event.target.value)}></input>
+              <button type="submit" onClick={searchByName} ><i>Buscar</i></button>
             </div>
+            <div className="btn">
+              <button onClick={prev}>Anterior</button>
+              <button onClick={next}>Próximo</button>
+              
+            </div>
+            
+            
+           
             <div className="grid-container">
               {pokemonData.map((pokemon, i) => {
                 return <PokemonCard key={i} pokemon={pokemon} />
               })}
             </div>
             <div className="btn">
-              <button onClick={prev}>Prev</button>
-              <button onClick={next}>Next</button>
+              <button onClick={prev}>Anterior</button>
+              <button onClick={next}>Próximo</button>
+              
             </div>
           </>
         )}
