@@ -4,6 +4,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependencies 
+Install Node.js:
+### `npm install`
+
+Install Material UI:
+### `npm install @material-ui/core`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -16,10 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## Install Material UI
-### `npm install @material-ui/core`
-
-## Test and Build
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
