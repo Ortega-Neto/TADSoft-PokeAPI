@@ -19,6 +19,7 @@ You will also see any lint errors in the console.
 Install Material UI:
 ### `npm install @material-ui/core`
 
+Teste and Build:
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
