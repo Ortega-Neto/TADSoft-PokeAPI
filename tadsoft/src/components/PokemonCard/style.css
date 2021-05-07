@@ -1,7 +1,30 @@
 p {
     margin: 0;
+    background: rgb(75, 74, 74);
+    text-align: center;
+}
+p:hover{
+    background-size: 100% 100%;
+    
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+.Card {
+    background: rgb(75, 74, 74);
+    border-radius: 10px;
+    margin: 15px;
+    border-style: ridge;
+    text-align: center;
+    border-color: #ef816c;
+}
+
+>>>>>>> b41338134876ef8d3134c8a6d4d3eb38e80bd5dc
 .Card_img {
     text-align: center;
 }

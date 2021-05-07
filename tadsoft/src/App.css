@@ -14,8 +14,13 @@
   display: flex;
   justify-content: center;
   margin: 20px 0;
+<<<<<<< HEAD
   font-size: 20px;
   cursor: pointer;
+=======
+  
+  
+>>>>>>> b41338134876ef8d3134c8a6d4d3eb38e80bd5dc
 }
 
 .btn button {
@@ -24,9 +29,15 @@
   margin-right: 10px;
   border-radius: 5px;
   background: #1E1F25;
+<<<<<<< HEAD
   color: #ef816c;
   font-size: 1em;
   cursor: pointer;
+=======
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+>>>>>>> b41338134876ef8d3134c8a6d4d3eb38e80bd5dc
 }
 .btn button:hover {
   background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
@@ -35,4 +46,8 @@
   animation: spring 300ms ease-out;
   text-shadow: 0 -1px 0 #ef816c;
 	font-weight: bold;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b41338134876ef8d3134c8a6d4d3eb38e80bd5dc
