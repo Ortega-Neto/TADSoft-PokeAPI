@@ -1,6 +1,18 @@
 p {
     margin: 0;
+    
+    text-align: center;
 }
+p:hover{
+    background-size: 100% 100%;
+    
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
 
 .Card_img {
     text-align: center;
@@ -36,4 +48,24 @@ p {
 
 .Card_data .title {
     font-weight: bold;
+}
+
+.Card_name:hover{
+    background-size: 100% 100%;
+    
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Card_type:hover{
+    background-size: 100% 100%;
+    
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 ;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
 }
