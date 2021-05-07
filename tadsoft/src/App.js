@@ -17,7 +17,8 @@ export default function App() {
       setNextUrl(response.next);
       setPrevUrl(response.previous);
 
-      
+      let pokenon = await loadPokemon(response.results);
+      console.log(pokenon);
 
       setLoading(false);
     }
