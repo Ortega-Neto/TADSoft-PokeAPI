@@ -18,11 +18,7 @@ li {
     text-transform: uppercase;
     cursor: pointer;
     color: #ebebeb;
-<<<<<<< HEAD
 	min-width: 1000px;
-=======
-	min-width: 80px;
->>>>>>> b41338134876ef8d3134c8a6d4d3eb38e80bd5dc
 	margin: auto;
     background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
     background-size: 100% 100%;
