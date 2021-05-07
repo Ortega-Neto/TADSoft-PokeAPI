@@ -15,6 +15,7 @@
   justify-content: center;
   margin: 20px 0;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .btn button {
@@ -22,7 +23,16 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
-  background: #30a7d7;
-  color: #fff;
+  background: #1E1F25;
+  color: #ef816c;
   font-size: 1em;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+	font-weight: bold;
 }

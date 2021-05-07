@@ -13,13 +13,15 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       backgroundColor:'#D3D3D3',
+      
     },
     paper: {
       padding: theme.spacing(1),
       textAlign: 'center',
       color: theme.palette.text.secondary,
-      backgroundColor:'#F0F0F0',
+      backgroundColor:'#fff',
     },
+    
   }));
 
 export default function PokemonCard({ pokemon }) {
